@@ -1,5 +1,5 @@
 import { Formik,Form,Field,ErrorMessage } from 'formik';
-import wifi from '../../assets/images/wifi.png';
+import wifi from '@/assets/images/wifi.png';
 import * as yup from 'yup';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
