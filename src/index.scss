@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family: "Montserrat", serif;
+    user-select: none;
+}
+
+.loader-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.BounceLoader {
+    color: #009de2;
+}
+
+.err-msg {
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+// Login Page Start
+#loginPage {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+
+    .login-image img {
+        width: 100%;
+        max-width: 270px;
+        height: 100%;
+    }
+
+    .login-card {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        padding: 10px;
+        -webkit-box-shadow: 0px 0px 80px 0px rgba(77, 84, 124, 0.09);
+        box-shadow: 0px 0px 80px 0px rgba(77, 84, 124, 0.09);
+        border-radius: 0.6rem;
+    }
+
+    .login-title {
+        margin-bottom: 20px;
+        color: #636576;
+        margin-top: 3rem;
+    }
+
+    .login-form {
+        margin-top: 1rem;
+        padding: 2rem 3rem 2rem 3rem;
+    }
+
+    .btn-submit-primary {
+        background-color: #000;
+        padding: 1rem 2rem;
+        color: #fff;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-submit-primary:hover {
+        background-color: #1f96ff;
+    }
+
+
+    .form-control {
+        all: unset;
+        width: 100%;
+        padding: 1rem 0;
+        font-weight: 500;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .form-control:focus {
+        width: 100%;
+        border-bottom: 1.5px solid #128efb;
+    }
+
+
+
+}
+
+// Login Page End
+
+#plansPage{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    // background-color: #eee;
+    .section-header{
+        display: flex;
+        background-color: #fff;
+        padding: 5px 25px;
+        border-radius: 20px;
+        justify-content: space-between;
+        align-items: center;
+        // margin-top: 50px;
+        .logo 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img
+            {
+                width: 50px;
+            }
+            p{
+                margin-bottom: 0 ;
+                font-weight: 600;
+                span{
+                    color: #1f96ff;
+                }
+            }
+        }
+
+        .switch-tabs{
+            p{
+                font-weight: 600;
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+            ul{
+                background-color: #eee;
+                border-radius: 6px;
+                padding: 3px;
+                .tab-item{
+                    padding: 2px;
+                    border-radius: 6px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 13px;
+                    &.active{
+                        background-color: #1f96ff;
+                        color: white;
+                    }
+                }
+
+                .tab-item:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .plans-section {
+        .service-card{
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+            // background-color: #009ee245;
+            background: linear-gradient(to right, #add8e677, #2096fe71);
+
+        }
+        .service-items{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+
+            .icon{
+                background-color: #fff;
+                padding: 5px;
+                border-radius: 50%;
+            }
+
+            p{
+                color: #000;
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            small{
+                color: rgba(38, 38, 38, 0.678);
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+
+        .switch-tabs-mobile{
+            display: none;
+           
+        }
+
+        .payment-card{
+            padding-right: 1.5rem ;
+            padding-left: 1.5rem ;
+            .card{
+                border-radius: 15px;
+                padding: 3rem 0px;
+                background-color: #fff;
+                -webkit-box-shadow: 0px 0px 80px 0px rgba(77, 84, 124, 0.09);
+                box-shadow: 0px 0px 80px 0px rgba(77, 84, 124, 0.09);
+            }
+            h5{
+                color: #1f96ff;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .discount-badge{
+                top: -15px;
+                background-color: #d5d3d3;
+                padding: 6px 15px;
+                border-radius: 20px; 
+                p{
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+            .payment-card-title{
+                font-weight: 600;
+            }
+
+            .pay-amount{
+                white-space: nowrap;
+                overflow: hidden;
+                p{
+                    font-size: 25px;
+                    font-weight: 600;
+                    small{
+                        font-size: 14px;
+                    }
+                }
+
+                .subtitle{
+                    font-size: 15px;
+                    margin-top: 10px;
+                    font-weight: 500;
+                    white-space: normal; /* Ensure the subtitle text wraps */
+                    word-break: break-word; /* Break words at appropriate places */
+                    overflow-wrap: break-word; /* Ensure wrapping works in modern browsers */
+                    word-break: break-all; /* Force breaks for long continuous strings */
+                    display: block; /* Optional: Make the span behave like a block for better wrapping */
+                }
+            }
+        }
+
+        .max-title{
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .alert-info{
+            background-color: #1f97ff49;
+            padding: 20px;
+            display: flex;
+            border-radius: 20px;
+            align-items: center;
+
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                color: #000;
+            }
+        }
+
+        .subscribe-now-disabled{
+            background-color: #aeaaaa5e;
+            width: 100%;
+            border: none;
+            border-radius: 15px;
+            padding: 15px;
+            color: white;
+            font-weight: 600;
+        }
+        .subscribe-now-active{
+            background-color: #63b7ff;
+            width: 100%;
+            border: none;
+            border-radius: 15px;
+            padding: 15px;
+            color: white;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #loginPage {
+        padding-top: 100px !important;
+        padding-bottom: 50px;
+
+        .login-image img {
+            width: 100%;
+            max-width: 180px;
+            height: 100%;
+        }
+
+        .login-image h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .login-image a {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .login-form {
+            padding: 1rem;
+        }
+
+        .login-title {
+            font-size: 17px;
+        }
+    }
+
+    #plansPage{
+        width: 100%;
+        height: 100vh;
+        padding: 10px 0px;
+
+        .section-header {
+            .switch-tabs{
+                display: none !important;
+            }
+        }
+
+        .plans-section {
+            .switch-tabs-mobile{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p{
+                    font-weight: 600;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                }
+                ul{
+                    background-color: #eee;
+                    border-radius: 6px;
+                    padding: 3px;
+                    .tab-item{
+                        padding: 2px;
+                        border-radius: 6px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                        color: #000;
+                        font-weight: 600;
+                        font-size: 13px;
+                        &.active{
+                            background-color: #1f96ff;
+                            color: white;
+                        }
+                    }
+    
+                    .tab-item:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            .payment-card{
+                padding-right: 0rem ;
+                padding-left: 0rem ;
+            }
+        }
+       
+    }
+}
+
+.btn-primary {
+    background-color: #63b7ff;
+    border-color: #63b7ff;
+}
+
+.btn-primary:hover {
+    background-color: #1f96ff;
+    border-color: #1f96ff;
+}
+
+.primary-link {
+    color: #2096fe;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.primary-link i {
+    font-size: 25px;
+}
