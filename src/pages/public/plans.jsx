@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import wifi from '@/assets/images/wifi.png';
-import cancel from '@/assets/images/cancel.png';
-import download from '@/assets/images/globe.png';
-import AI from '@/assets/images/brain.png';
-import Smiley from '@/assets/images/smiley.png';
+import React from 'react';
+import wifi from '../../assets/images/wifi.png';
+import cancel from '../../assets/images/cancel.png';
+import download from '../../assets/images/globe.png';
+import AI from '../../assets/images/brain.png';
+import Smiley from '../../assets/images/smiley.png';
 
 
 
